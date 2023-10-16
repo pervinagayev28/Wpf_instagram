@@ -1,0 +1,57 @@
+﻿<Window x:Class="Instagram.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Instagram"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:iconPacks="http://materialdesigninxaml.net/winfx/xaml/iconpacks"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="1000">
+    <Grid>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Top" Height="495" Width="430" Margin="0,50,0,0"/>
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Height="495" Width="430" Margin="0,50,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="1.2*"/>
+                <RowDefinition Height="1.2*"/>
+                <RowDefinition Height="1.2*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <materialDesign:PackIcon HorizontalAlignment="Center" Kind="Instagram" Height="70" Width="150"/>
+            <Image Source="https://freepngimg.com/thumb/logo/70011-instagram-script-typeface-myfonts-user-logo-font.png" Height="70" Width="300" VerticalAlignment="Bottom" Margin="0,0,0,20"/>
+            <Border Grid.Row="1" Height="60" Background="#F3F0EB" Width="320" BorderThickness="2" CornerRadius="25">
+                <TextBox Text=" username" VerticalContentAlignment="Center" FontSize="30"  Height="50" Width="300" Background="#F3F0EB" BorderThickness="0"/>
+            </Border>
+
+            <Border  Grid.Row="2" Height="60" Background="#F3F0EB" Width="320" BorderThickness="2" CornerRadius="25">
+                <TextBox Text=" passsword" FontSize="30" Height="50" Width="300" Background="#F3F0EB" BorderThickness="0"/>
+            </Border>
+            <Border  Grid.Row="3" Height="60" Width="320" BorderThickness="2" Background="#9ACDFF" CornerRadius="25">
+                <Button Content=" log in" FontSize="30" Height="50" Width="300" Background="#9ACDFF" BorderThickness="0"/>
+            </Border>
+            <Separator Grid.Row="4" Width="110" HorizontalAlignment="Left" Margin="70,0,0,0"/>
+            <Separator Grid.Row="4" Width="110" HorizontalAlignment="Right" Margin="0,0,70,0"/>
+            <Label Grid.Row="4" Content="or" Width="30" FontSize="23"/>
+
+        
+
+            <Button x:Name="button" Height="50" Width="200" Grid.Row="5" Content="forgot password?" FontSize="20" Background="White" BorderThickness="0">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="15">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border"  Property="Background" Value="#F3F0EB"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+        </Grid>
+    </Grid>
+</Window>

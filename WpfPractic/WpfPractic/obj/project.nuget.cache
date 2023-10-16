@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "jNoGO/TT7WdTOqhWZ44k4htqBu5sA11usyzF48iMfsvZfFpGa8fVFawi+ax0+LKHhjBzVfoqHlfT5HRUCOFcpg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\OneDrive\\Desktop\\WpfPractic\\WpfPractic\\WpfPractic.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\mahapps.metro.iconpacks.material\\4.11.0\\mahapps.metro.iconpacks.material.4.11.0.nupkg.sha512"
+  ],
+  "logs": []
+}
